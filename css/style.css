@@ -1,0 +1,91 @@
+body{
+    font-family: 'Roboto', sans-serif;
+   
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    right: auto;
+    bottom: auto;
+}
+
+.daring{
+    padding-bottom: 150px;
+}
+.seed{
+    margin-top: -70px;
+}
+
+.border-bg{
+    width: 150px;
+    height: 115%;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 8px solid red;
+    border-right: 0px;
+}
+
+.border-bg::before, .border-bg::after{
+    content: "";
+ display: inline-block;
+ width: 8px;
+ height: 10px;
+ background-color: red;
+ position: absolute;
+ right: 0;
+
+}
+
+.border-bg::before{
+    top: -1px;
+}
+.border-bg::after{
+    bottom: -1px;
+}
+.pad{
+    padding: 0;
+}
+
+.margin{
+    margin-top: -40px;
+}
+
+.marg{
+    margin-top: -170px;
+}
+.direct{
+    width: 300px;
+}
+
+.padding{
+   left: 50px;
+}
+
+.right{
+    right: 50px;
+}
+
+.sizing{
+    width: 300px;
+    left:300px;
+    top: 50px;
+}
+.posit{
+    width: 255px;
+    left: 178px;
+    
+}
+
+.sizze{
+    width: 1000px;
+    height: 250px;
+}
+.colors{
+    background-color: rgb(221, 228, 228);
+}
+.mar{
+    margin-bottom: 120px;
+
+}

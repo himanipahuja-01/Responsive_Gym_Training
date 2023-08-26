@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainguard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="main-header d-flex">
+      <div class="logo bg-danger py-2 px-3">
+        <img src="../images/logo.png" alt="logo" />
+      </div>
+      <div class="navigation flex-fill">
+        <div class="top-info bg-dark text-white d-flex align-item-center">
+          <div class="info d-flex">
+            <div class="contact py-2 ps-3 pe-5">
+              <i class="bi bi-telephone-forward me-2"></i>
+              <span>740.993.766</span>
+            </div>
+            <div class="email py-2 ps-3 pe-5">
+              <i class="bi bi-envelope-open-fill me-2"></i>
+              <span>contact@netmaxtech.com</span>
+            </div>
+          </div>
+          <div class="social-icons py-2 ps-3 pe-5 ms-auto">
+            <i class="bi bi-facebook me-3"></i>
+            <i class="bi bi-youtube me-3"></i>
+            <i class="bi bi-google me-3"></i>
+            <i class="bi bi-instagram me-3"></i>
+          </div>
+        </div>
+        <nav
+          class="navbar navbar-expand-md navbar-light bg-white"
+          aria-label="Fourth navbar example"
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample04"
+              aria-controls="navbarsExample04"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="9000">
+          <img src="../images/one.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../images/one.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="../images/one.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-caption d-md-block text-start d-none">
+          <h5 class="text-white">Tageline here</h5>
+          <h1 class="display-2 text-white fw-bold">Title here</h1>
+          <h4 class="text-white">Description Here</h4>
+          <a href="#" class="btn btn-outline-light">Join us now</a>
+          <div class="border-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row text-center align-item-center">
+        <div class="col-lg-4 bg-dark text-white">
+          <div class="row">
+            <div class="col-lg-7 ms-auto p-4">
+              <i class="bi bi-alarm text-light fs-1 mb-3"></i>
+              <h4 class="text-light fw-bold mb-3">PROGRESSION</h4>
+              <p class="text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur necessitatibus a, esse ipsa qui ea tempore at ullam
+                nemo atque eaque soluta non, quae tempora?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 p-4">
+              <i class="bi bi-alarm fs-1 mb-3"></i>
+              <h4 class="fw-bold mb-3">PROGRESSION</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur necessitatibus a, esse ipsa qui ea tempore at ullam
+                nemo atque eaque soluta non, quae tempora?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 bg-danger text-white">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 me-auto p-4">
+              <i class="bi bi-alarm text-light fs-1 mb-3"></i>
+              <h4 class="text-light fw-bold mb-3">PROGRESSION</h4>
+              <p class="text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur necessitatibus a, esse ipsa qui ea tempore at ullam
+                nemo atque eaque soluta non, quae tempora?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- <img src="../images/red_lines.png" class="float-right width: 50px height: 200px"/> -->
+      <div class="row">
+        <div class="col mt-5 justify-content-center ms-auto">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-10 ms-auto">
+              <p>ABOUT US</p>
+              <h1 class="fw-bold">WHO ARE WE</h1>
+              <p class="text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                dignissimos quaerat ipsam eveniet cumque modi amet sequi
+                incidunt accusantium veritatis, consequuntur numquam, eligendi
+                obcaecati tenetur! Consequatur culpa eveniet facilis animi?
+              </p>
+              <div class="row mt-5">
+                <div class="col w-25">
+                  <i
+                    class="fa-solid fa-dumbbell fa-3x offset-3 mt-1 text-danger"
+                  ></i>
+                </div>
+
+                <div class="col-8 w-75">
+                  <p class="fw-bold">Fitness Exercise</p>
+                  <p class="text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col w-25">
+                  <i
+                    class="fa-solid fa-person-running fa-3x offset-3 mt-1 text-danger"
+                  ></i>
+                </div>
+                <div class="col-8 w-75">
+                  <p class="fw-bold">Cardio Training</p>
+                  <p class="text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col me-3 me-auto d-flex">
+          <img class="img-fluid" src="../images/three.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center bg-dark text-white">
+      <div class="col-10 position-absolute justify-content-center">
+        <p class="display-1 py-4 px-5 text-muted">F E A T U R E S</p>
+      </div>
+      <div
+        class="col-10 position-relative align-item-center justify-content-center"
+      >
+        <h1 class="fw-bold py-5">WHY CHOOSE US</h1>
+      </div>
+      <div class="row align-item-center justify-content-center">
+        <div class="col-6 px-5">
+          <p class="text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            eligendi distinctio, ad in velit rem labore nam!
+          </p>
+        </div>
+      </div>
+
+      <div class="container px-5 py-5">
+        <div class="row px-5 daring">
+          <div class="col-sm-3">
+            <div class="card bg-secondary">
+              <div class="card-body">
+                <h5 class="card-title">TOPS</h5>
+
+                <i class="fa-regular fa-hat-cowboy fs-1"></i>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card bg-secondary">
+              <div class="card-body">
+                <h5 class="card-title">BOTTOMS</h5>
+
+                <i class="fa-regular fa-hat-cowboy fs-1"></i>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card bg-secondary">
+              <div class="card-body">
+                <h5 class="card-title">HOODIES</h5>
+
+                <i class="fa-regular fa-hat-cowboy fs-1"></i>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card bg-secondary">
+              <div class="card-body">
+                <h5 class="card-title">ACCESSORIES</h5>
+                <i class="fa-regular fa-hat-cowboy fs-1"></i>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid seed mb-5">
+      <div class="row">
+        <div class="col pad"></div>
+        <div class="col-md-4 col-lg-3 pad">
+          <img class="img-fluid" src="../images/four.png" />
+        </div>
+
+        <div class="col-lg-7 col-md-8 bg-danger pad">
+          <div class="col mt-3 px-5 me-5 text-white">
+            <h3 class="fw-bold fs-2">TITLE HERE</h3>
+            <p class="mt-4 pe-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus, cupiditate eveniet. In facere quidem quame!
+            </p>
+            <button class="btn btn-outline-light">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 mt-5 mb-5">
+          <p>TESTIMONIAL</p>
+          <h1>Reviews From</h1>
+          <h1>YOU</h1>
+          <p class="mt-5 mb-1">Nutritionist</p>
+          <h3 class="mb-0">JEREMY GEORGE</h3>
+          <span><i class="bi bi-star-fill text-warning"></i></span>
+          <span><i class="bi bi-star-fill text-warning"></i></span>
+          <span><i class="bi bi-star-fill text-warning"></i></span>
+          <span><i class="bi bi-star-fill text-warning"></i></span>
+          <span><i class="bi bi-star-fill text-warning"></i></span>
+          <p class="mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eius eos
+            delectus illo quo maiores non dolor! Quaerat, fugiat facere aperiam
+            veritatis eligendi quibusdam ipsa quia accusamus sit voluptates
+            impedit?
+          </p>
+        </div>
+
+        <div class="col-lg-4 mt-4 mb-5">
+          <img class="img-fluid" src="../images/two.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-light">
+      <div class="row align-item-center justify-content-center daring">
+      <div class="col-lg-10 mt-5 mb-5">
+        <div class="row">
+          <div class="col-lg-3 d-inline">
+            <div class="row p-0">
+            <div class="col-lg-4">
+              <i class="fa-solid fa-dumbbell fa-3x"></i>
+            </div>
+            <div class="col-lg-8">
+                  <h4>143</h4>
+                  <p>helloooooo</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-inline">
+            <div class="row m-0">
+            <div class="col-lg-4">
+              <i class="fa-solid fa-dumbbell fa-3x"></i>
+            </div>
+            <div class="col-lg-8">
+                  <h4>143</h4>
+                  <p>helloooooo</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-inline">
+            <div class="row p-0">
+            <div class="col-lg-4">
+              <i class="fa-solid fa-dumbbell fa-3x"></i>
+            </div>
+            <div class="col-lg-8">
+                  <h4>143</h4>
+                  <p>helloooooo</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-inline">
+            <div class="row p-0">
+            <div class="col-lg-4">
+              <i class="fa-solid fa-dumbbell fa-3x"></i>
+            </div>
+            <div class="col-lg-8">
+                  <h4>143</h4>
+                  <p>helloooooo</p>
+                </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container-fluid seed mb-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <iframe
+            width="1000"
+            height="500"
+            src="https://www.youtube.com/embed/8a1-_0_NS_A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <h1 class="heading fw-bold text-center">OUR TRAINING SERVICES</h1>
+      <div class="row align-item-center justify-content-center">
+        <div class="col-lg-6 align-item-center justify-content-center">
+          <p class="text-center p-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quia
+            sint vero voluptatem eius, quis doloremque beatae labore expedita
+            minus alias. Dolor aspernatur, pariatur nesciunt cum temporibus
+            similique officiis ipsam?
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-10 ms-auto me-2">
+              <div class="card">
+                <iframe
+                  class="card-img-top"
+                  style="height: 250px"
+                  src="https://www.youtube.com/embed/1piFN_ioMVI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="card margin me-5 ms-5 shadow-lg p-2">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                  voluptatum cupiditate tempore distinctio recusandae corrupt
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-10 me-auto ms-2">
+              <div class="card">
+                <iframe
+                  class="card-img-top"
+                  style="height: 250px"
+                  src="https://www.youtube.com/embed/1piFN_ioMVI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="card margin me-5 ms-5 shadow p-2">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure
+                  voluptatum cupiditate tempore distinctio recusandae corrupt
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 mt-5 mb-5 bg-white"></div>
+        <div class="row mt-5">
+          <div class="col-lg-6 text-light bg-dark">
+            <div class="row align-item-center justify-content-center mt-5 mb-5">
+              <div class="col-lg-8 mt-5 ms-5 mb-5">
+                <h4>TITLE HERE</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores reprehenderit
+                </p>
+                <a href="#" class="btn btn-outline-light mt-3 p-2">Shop now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-light bg-dark">
+            <div class="row">
+              <div class="col-lg-4 marg">
+                <img class="img" src="../images/whey.png" />
+              </div>
+              <div class="col-lg-4 ms-5">
+                <img class="img direct" src="../images/protien1.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-lg-6 mt-5">
+          <div class="row">
+            <div class="col-lg-5 ms-auto">
+              <img
+                class="img-fluid position-relative sizing"
+                src="../images/whey.png"
+              />
+            </div>
+            <div class="col-lg-6">
+              <img
+                class="img-fluid position-absolute posit"
+                src="../images/whey.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5 mb-5">
+          <div class="row">
+            <div class="col-lg-8 mt-5">
+              <p>BEST SELLING PRODUCT</p>
+              <h1 class="fw-bolder">WHEY PROTEIN</h1>
+              <p>at ad impedit quidem eum debitis animi, adipisci</p>
+              <div class="box mt-4 mb-2">
+                <span
+                  ><button
+                    type="button"
+                    class="btn btn-secondary rounded-pill opacity-50"
+                  >
+                    2.27kg
+                  </button></span
+                >
+                <span
+                  ><button
+                    type="button"
+                    class="btn btn-outline-dark rounded-pill m-2"
+                  >
+                    4.54kg
+                  </button></span
+                >
+                <span
+                  ><button
+                    type="button"
+                    class="btn btn-secondary rounded-pill m-2 opacity-50"
+                  >
+                    7.05kg
+                  </button></span
+                >
+              </div>
+              <h1 class="display-4 fw-bolder">$10</h1>
+            </div>
+          </div>
+          <div class="box d-inline">
+            <span
+              ><button type="button" class="btn btn-dark px-5">
+                ADD TO CART
+              </button></span
+            >
+            <span
+              ><button type="button" class="btn btn-dark opacity-50 px-5">
+                ADD WISHLIST
+              </button></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="row align-item-center justify-content-center">
+        <div class="col-lg-6">
+          <h1 class="text-center fw-bolder">OUR LATEST BLOG</h1>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nihil
+            ipsum. Ipsa consectetur numquam maiores, est quo repellendus.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-4">
+          <img
+            class="img-fluid rounded sizze"
+            src="../images/images.jpeg"
+            alt="Card image cap"
+          />
+          <div class="body">
+            <div class="box m-2">
+              <span class="text-secondary m-2"
+                ><i class="bi bi-person text-danger m-2"></i>ADMIN</span
+              >
+              <span class="text-secondary m-2"
+                ><i class="bi bi-calendar-date-fill text-danger m-2"></i>23
+                JAN</span
+              >
+              <span class="text-secondary m-2"
+                ><i class="bi bi-person text-danger m-2"></i>ADMIN</span
+              >
+            </div>
+            <h4 class="mb-4">Lorem ipsum dolor sit amet</h4>
+            <p class="text-secondary">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <img
+            class="img-fluid rounded sizze"
+            src="../images/moderateExercise-500591410-770x553-1.jpg"
+            alt="Card image cap"
+          />
+          <div class="body">
+            <div class="box m-2">
+              <span class="text-secondary m-2"
+                ><i class="bi bi-person text-danger m-2"></i>ADMIN</span
+              >
+              <span class="text-secondary m-2"
+                ><i class="bi bi-calendar-date-fill text-danger m-2"></i>23
+                JAN</span
+              >
+              <span class="text-secondary m-2"
+                ><i class="bi bi-person text-danger m-2"></i>ADMIN</span
+              >
+            </div>
+            <h4 class="mb-4">Lorem ipsum dolor sit amet</h4>
+            <p class="text-secondary">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <img
+            class="img-fluid rounded sizze"
+            src="../images/KLZwUWe4JwyyXY7pV7CpaU-1200-80.jpg"
+            alt="Card image cap"
+          />
+          <div class="body">
+            <div class="box m-2">
+              <span class="text-secondary m-2"
+                ><i class="bi bi-person text-danger m-2"></i>ADMIN</span
+              >
+              <span class="text-secondary m-2"
+                ><i class="bi bi-calendar-date-fill text-danger m-2"></i>23
+                JAN</span
+              >
+              <span class="text-secondary m-2"
+                ><i class="bi bi-person text-danger m-2"></i>ADMIN</span
+              >
+            </div>
+            <h4 class="mb-4">Lorem ipsum dolor sit amet</h4>
+            <p class="text-secondary">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-danger mar">VIEW MORE</p>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row colors align-item-center justify-content-center">
+        <div class="col-lg-9 rounded bg-danger margin mb-5">
+          <div class="row">
+            <div class="col-lg-6 p-5 text-light">
+              <h2>LETS START!</h2>
+              <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                sit esse, nemo porro ut, rerum quo quidem voluptatibus saepe,
+                repellat eaque laudantium?
+              </p>
+            </div>
+
+            <div class="col-lg-6 p-5">
+              <form>
+                <div class="form-group px-4 py-3">
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="exampleInputName1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="form-group px-4 py-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-group px-4 py-3 d-grid gap-2">
+                  <button class="btn btn-dark" type="button">SUBSCRIBE</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+      <div class="row align-item-center justify-content-center">
+        <div class="col-lg-10 mt-5 mb-5 d-inline">
+          <div class="row">
+            <div class="col-lg-3 p-4">
+              <img src="../images/logo.png" class="" />
+              <p class="mt-4">
+                <i class="bi bi-geo-alt-fill text-danger fa-1x"></i
+                ><span class="text-light"
+                  >463 Round Table drive, Norwood, OH, Ohio</span
+                >
+              </p>
+
+              <p class="mt-4">
+                <i class="bi bi-telephone-fill text-danger fa-1x"></i
+                ><span class="text-light">+ 123456789</span>
+              </p>
+              <div class="box mt-4">
+                <span><i class="bi bi-linkedin text-danger fa-2x"></i></span>
+                <span><i class="bi bi-twitter text-danger fa-2x m-4"></i></span>
+                <span><i class="bi bi-facebook text-danger fa-2x"></i></span>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 text-light p-4 mt-5 align-item-center justify-content-center"
+            >
+              <h4>Category</h4>
+              <div class="box mt-4">
+                <p>First Link</p>
+                <p>Second Long Link</p>
+                <p>Third Link</p>
+                <p>Fourth Long Link</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 text-light p-4 mt-5">
+              <h4>Category</h4>
+              <div class="box mt-4">
+                <p>First Link</p>
+                <p>Second Long Link</p>
+                <p>Third Link</p>
+                <p>Fourth Long Link</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 text-light p-4 mt-5">
+              <h4>Category</h4>
+              <div class="box mt-4">
+                <p>First Link</p>
+                <p>Second Long Link</p>
+                <p>Third Link</p>
+                <p>Fourth Long Link</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
